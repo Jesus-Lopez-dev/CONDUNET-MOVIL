@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/MyLayout1"
+        android:layout_width="418dp"
+        android:layout_height="735dp"
+        android:background="@drawable/fondo_login"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/UserImage"
+            android:layout_width="202dp"
+            android:layout_height="164dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="60dp"
+            android:contentDescription="@string/User_Image_txt"
+            app:srcCompat="@drawable/user" />
+
+        <ImageView
+            android:id="@+id/EmpresaImage"
+            android:layout_width="344dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/Empresa_Image_txt"
+            app:srcCompat="@drawable/condunet" />
+
+        <EditText
+            android:id="@+id/UserName"
+            android:layout_width="368dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:ems="10"
+            android:hint="@string/UserName_txt"
+            android:inputType="textPersonName"
+            android:autofillHints="No"/>
+
+        <EditText
+            android:id="@+id/UserPassword"
+            android:layout_width="368dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:hint="@string/User_Password_txt"
+            android:inputType="textPassword"
+            android:importantForAutofill="no" />
+
+        <Button
+            android:id="@+id/LoginOn"
+            android:layout_width="257dp"
+            android:layout_height="58dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:text="@string/LoginOn_txt" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

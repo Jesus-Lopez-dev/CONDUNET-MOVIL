@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">MyProjecQRCode</string>
+    //Variables Login
+    <string name="User_Image_txt">Usuario</string>
+    <string name="Empresa_Image_txt">Logo empresa</string>
+    <string name="UserName_txt">Ingrese su nombre de usuario</string>
+    <string name="User_Password_txt">Ingrese su contraseña</string>
+    <string name="LoginOn_txt">Iniciar sesión</string>
+    <string name="Num_interno_txt">Numero de parte interno</string>
+    <string name="Nombre_con_txt">Nombre</string>
+    <string name="Descripcion_txt">Descripción</string>
+    <string name="Stock_txt">Cantidad en stock</string>
+    <string name="Scan_btn">Comienza a escanear</string>
+    <string name="Mod_stock_txt">Cantidad</string>
+    <string name="Img_con_img">Conector 2022/02/23</string>
+    <string name="Alta_con_btn">Ingresar</string>
+    <string name="Baja_con_btn">Dar de baja</string>
+    <string name="Confirmar_btn">Confirmar</string>
+    <string name="Pregunta_txt">Motivo de la baja:</string>
+
+</resources>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Info_BD">
+
+    <LinearLayout
+        android:id="@+id/MiLayout2"
+        android:layout_width="409dp"
+        android:layout_height="690dp"
+        android:background="@drawable/fondo_login"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/Scan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/Scan_btn"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:backgroundTint="#2196F3" />
+
+        <ImageView
+            android:id="@+id/Img_con"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:contentDescription="@string/Img_con_img"
+            app:srcCompat="@android:drawable/ic_menu_camera" />
+
+        <TextView
+            android:id="@+id/Num_interno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/Num_interno_txt"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/Nombre_con"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/Nombre_con_txt"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/Descripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/Descripcion_txt"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/Stock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/Stock_txt"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/Mod_stock"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/Mod_stock_txt"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/Pregunta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/Pregunta_txt"
+            android:textSize="20sp"
+            android:visibility="invisible" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/Confirmar"
+            android:layout_width="190dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="@string/Confirmar_btn"
+            android:visibility="invisible"
+            app:backgroundTint="#5099AC" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/MiLayout3"
+        android:layout_width="409dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/Alta_con"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/Alta_con_btn"
+            android:textColor="#FFFFFF"
+            app:backgroundTint="#234C5E" />
+
+        <Button
+            android:id="@+id/Baja_con"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/Baja_con_btn"
+            android:textColor="#FFFFFF"
+            app:backgroundTint="#5099AC" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
